@@ -1,20 +1,20 @@
-#单号注释
+#1、单号注释
 '''
 多行注释
 '''
 
-#输出语句
-print("hello")
+#2、输出语句
+# print("hello")
 
-#变量
+#3、说变量
 '''
 name = "大吉"
 age = 23
 print(type(age))
 print(name,age)
 '''
-#input函数 ：让用户输入
-'''
+#4、input函数 ：让用户输入
+'''                      
 input("name:")
 input("passwork:")
 '''
@@ -25,6 +25,8 @@ _age = int(input("age:"))
 print(type(_age))
 '''
 
+#5、format格式化
+
 # show ='''
 # ----------  输出  ： ------------
 # name:{name}
@@ -33,7 +35,8 @@ print(type(_age))
 
 #print(show)
 
-#if-else 流程判断
+#6、if-else 流程判断
+
 # username = "jinzhong"
 # passwork = 12345
 # print(type(passwork))
@@ -48,16 +51,26 @@ print(type(_age))
 #     print("账号或密码错误")
 
 # 猜数字游戏
-answer = 24
+# answer = 24
+#
+# guess = int(input("guess:"))
+#
+# if guess == answer :
+#     print("恭喜你，答对了。。")
+# elif guess > answer :
+#     print("猜大了，请往小一点的猜。。")
+# else:
+#     print("猜小了，请往大一点的猜。。")
 
-guess = int(input("guess:"))
+#7、密码加密   注意：pycharm是无法实现getpass模块的加密
+import getpass
 
-if guess == answer :
-    print("恭喜你，答对了。。")
-elif guess > answer :
-    print("猜大了，请往小一点的猜。。")
-else:
-    print("猜小了，请往大一点的猜。。")
+username = "jizhong"
+passwork = 123456
+
+username_ = input("请输入你的名字:")
+passwork_ = getpass.getpass(input("请输入你的密码:"))
+
 
 
 
